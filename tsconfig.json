@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "incremental": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noLib": false,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "$/*": ["./*"],
+      "@lib/*": ["./src/lib/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "playground.ts"]
+}

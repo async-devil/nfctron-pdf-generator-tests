@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+**/node_modules
+
+# misc
+.DS_Store
+*.pem
+tsconfig.tsbuildinfo
+
+# IDE
+.idea/
+.atom/
+.vscode/
+
+# test playground
+playground.ts
+
+# local env files
+.env.local
+
+# vscode
+.vscode
+
+# build output
+**/dist
+**/build
+
+# npm
+.npmrc
+
+# dist
+dist/
