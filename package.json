@@ -1,0 +1,29 @@
+{
+  "name": "nfctron-pdf-generator-tests",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**",
+    "src"
+  ],
+  "scripts": {
+    "run": "pnpm build && node build/index.js",
+    "clean:build": "rimraf ./build",
+    "build": "pnpm clean:build && tsc --project tsconfig.json",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^3.4.4",
+    "react": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "rimraf": "^6.0.1",
+    "typescript": "5.3.3"
+  }
+}
