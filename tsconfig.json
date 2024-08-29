@@ -26,6 +26,7 @@
     "outDir": "./build",
     "noImplicitAny": false,
     "baseUrl": "./",
+    "esModuleInterop": true,
     "paths": {
       "$/*": ["./*"],
       "@lib/*": ["./src/lib/*"]
